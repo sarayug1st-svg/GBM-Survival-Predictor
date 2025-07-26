@@ -3,8 +3,8 @@ import pandas as pd
 import joblib
 
 # Load model and encoders
-model = joblib.load("rf_gbm_model.pkl")
-label_encoders = joblib.load("label_encoders.pkl")
+mmodel = joblib.load("rf_gbm_model_py13.pkl")
+label_encoders = joblib.load("label_encoders_py13.pkl")
 
 st.title("GBM Survival Prediction Tool")
 st.write("Estimate survival time based on patient features and biomarkers.")
